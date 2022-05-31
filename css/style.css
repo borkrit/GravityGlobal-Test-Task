@@ -66,7 +66,7 @@ body {
 .popup {
     
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 230px;
@@ -82,7 +82,11 @@ body {
 .popup-display{
     display: none;
 }
-
+.popup__content {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
 .popup__title {
     font-weight: 700;
     font-size: 42px;
@@ -103,11 +107,7 @@ body {
     font-weight: 700;
 }
 
-.popup__content {
-    margin: 0 auto;
-    width: 80%;
-    position: relative;
-}
+
 
 .reload {
     display: none;
