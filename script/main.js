@@ -11,16 +11,13 @@ let popUpText = document.querySelector('.popup__number');
 
 function count(){
     let number =  Number(localStorage.getItem('count'));
-
-    
     number+=1
-    
 
-    displayText(number)
-    if(number==5){
+    displayText(popUpText,number)
+    if(number>=5){
         reload.style.display='block'
     }
-    openModal();
+    openModal(popup,'popup-display');
 
    localStorage.setItem('count', number)
 }
@@ -28,15 +25,13 @@ function count(){
 function refCount(){
     localStorage.setItem('count', '0')
     let number = Number(localStorage.getItem('count'));
-    
+
     reload.style.display='none'
-    displayText(number)
-    
+    displayText(popUpText,number)
 }
 
-function displayText(element){
-    
-    popUpText.innerHTML=`${element} times`
+function displayText(element,innerElement){
+    element.innerHTML=`${innerElement} times`
 }
 
 

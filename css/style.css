@@ -1,6 +1,7 @@
 :root {
     --primary-color: #E4C1AE;
     --second-color: #121212;
+    --text-color:#fff
 
 }
 
@@ -25,6 +26,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .block__content {
@@ -55,7 +57,7 @@ body {
     padding: 16px 40px;
     background: var(--primary-color);
     border-radius: 32px;
-    color: white;
+    color: var(--text-color);
     width: max-content;
     cursor: pointer;
 }
@@ -68,7 +70,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 230px;
-    background: white;
+    background: var(--text-color);
     width: 920px;
 
     display: flex;
@@ -109,11 +111,27 @@ body {
 
 .reload {
     display: none;
+    position: absolute;
+    left: 89%;
+    cursor: pointer;
+    animation: refresh 5s infinite ;
 }
+@keyframes refresh {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+   
+}
+
+
 .close{
     position: absolute;
     top: -50%;
     left: 100%;
+    cursor: pointer;
 }
 
 .dark {
@@ -129,7 +147,7 @@ body {
   }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1441px) {
     .container {
         max-width: 980px;
     }
