@@ -174,14 +174,13 @@ body {
 }
 @media screen and (max-width:754px) {
    
-
     .block__content {
         margin-top: 50px;
     }
 }
+
 @media screen and (max-width:425px) {
    
-
     .block__content {
         width: 100%;
     }
