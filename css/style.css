@@ -172,3 +172,10 @@ body {
         width: 65%;
     }
 }
+@media screen and (max-width:425px) {
+   
+
+    .block__content {
+        width: 100%;
+    }
+}
