@@ -6,11 +6,11 @@ let close = document.querySelector('.close');
 let popUpText = document.querySelector('.popup__number');
 
 
-localStorage.setItem('count', '0')
+
 
 
 function count(){
-    let number = Number(localStorage.getItem('count'));
+    let number =  Number(localStorage.getItem('count'));
 
     
     number+=1
@@ -28,6 +28,7 @@ function count(){
 function refCount(){
     localStorage.setItem('count', '0')
     let number = Number(localStorage.getItem('count'));
+    
     reload.style.display='none'
     displayText(number)
     
